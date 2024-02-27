@@ -7,15 +7,15 @@
 
 body{
     min-height: 100vh;
-    background-color: #c5c6c7;
+    background-color: #C5C6C7;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .calculadora{
-    background-color:#fd7656;
-    color: white;
+    background-color:#fb7b6a;
+    color: #fce1d6 ;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 500px;
@@ -34,18 +34,28 @@ body{
     justify-content: right;
     font-family: monospace;
     font-weight: 600;
-    background-color: #fd7656;
+    background-color:#fb7b6a;
+    margin-left: 15px;
+    overflow: auto;
 }
 
 #cero{
     grid-column: 1/3;
 }
 
+#igual{
+    grid-row: span 2;
+}
 .boton{
-    background-color: #fe9882;
-    color:white;
+    background-color:#fe9882;
+    color: #fce1d6;
     font-size: 1.5rem;
     font-weight: 500;
     border-style: none;
-    margin: 1px;
+    margin: 0.8px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color:#fe756f;
 }
